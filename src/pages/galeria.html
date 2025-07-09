@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt- Br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeria</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/styles/style.css" />
+  <script src="/scripts/galeria.js" type="module" defer></script>
+</head>
+
+<body class="body">
+  <!-- CABECALHO -->
+  <header class="cabecalho">
+    <h1 class="cabecalho__titulo">
+      FLASH-<span class="cabecalho__titulo-enfase">ON</span>
+    </h1>
+    <div class="cabecalho__div">
+      <p class="cabecalho__div-paragrafo">Bem vindo Matheus!</p>
+      <button class="cabecalho__div-btn fa-solid fa-chevron-down"></button>
+
+      <ul class="cabecalho__div-menu cabecalho__div-menu--close">
+
+        <li class="cabecalho__div-menu-item cabecalho__div-menu-item--perfil">
+          <button class="cabecalho__div-menu-item-btn">Perfil</button>
+          <i class="cabecalho__div-menu-item-icone cabecalho__div-menu-item-icone--perfil"></i>
+        </li>
+
+        <li class="cabecalho__div-menu-item cabecalho__div-menu-item--notificacoes">
+          <button class="cabecalho__div-menu-item-btn">Notificações</button>
+          <i class="cabecalho__div-menu-item-icone cabecalho__div-menu-item-icone--notificacoes"></i>
+        </li>
+
+        <li class="cabecalho__div-menu-item cabecalho__div-menu-item--configuracoes">
+          <button class="cabecalho__div-menu-item-btn">Configurações</button>
+          <i class="cabecalho__div-menu-item-icone cabecalho__div-menu-item-icone--configuracoes"></i>
+        </li>
+
+        <li class="cabecalho__div-menu-item cabecalho__div-menu-item--criar">
+          <button class="cabecalho__div-menu-item-btn">Criar</button>
+          <i class="cabecalho__div-menu-item-icone cabecalho__div-menu-item-icone--criar"></i>
+        </li>
+
+        <li class="cabecalho__div-menu-item cabecalho__div-menu-item--sair">
+          <button class="cabecalho__div-menu-item-btn">Sair</button>
+          <i class="cabecalho__div-menu-item-icone cabecalho__div-menu-item-icone--sair"></i>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- PRINCIPAL -->
+  <main class="principal-galeria">
+    <section class="principal-galeria__secao">
+      <h2 class="principal-galeria__secao-titulo">MEU MURAL</h2>
+      <input class="principal-galeria__secao-input" type="text" placeholder="Oque você busca?">
+      <button class="principal-galeria__secao-btn"></button>
+      <!-- CARDS  -->
+      <div class="principal-galeria__secao-fotos">
+
+        <!-- <div class="principal-galeria__secao-fotos-card" data-cardfoto="0" >
+            <img src="/barco.jpg" alt="" class="principal-galeria__secao-fotos-card-img">
+            <p class="principal-galeria__secao-fotos-card-descricao">Uma viagem inesquecível! Estar no barco ao pôr do sol foi mágico. O cheiro do mar misturado com a brisa fresca era incrível.Uma viagem inesquecível! Estar no barco ao pôr do sol foi mágico. O cheirooo</p>
+            <p class="principal-galeria__secao-fotos-card-data">10/04/2001</p>
+            <p class="principal-galeria__secao-fotos-card-nome">Grécia.</p>
+          </div>
+
+          <div class="principal-galeria__secao-fotos-card" data-cardfoto="1" >
+            <img src="/public/desenho-passarinho.jpg" alt="" class="principal-galeria__secao-fotos-card-img">
+            <p class="principal-galeria__secao-fotos-card-descricao">Um pardal fedido desenhado</p>
+            <p class="principal-galeria__secao-fotos-card-data">10/04/2002</p>
+            <p class="principal-galeria__secao-fotos-card-nome">Grécia.</p>
+          </div>
+
+          <div class="principal-galeria__secao-fotos-card" data-cardfoto="2">
+            <img src="/nuvens.jpg" alt="" class="principal-galeria__secao-fotos-card-img">
+            <p class="principal-galeria__secao-fotos-card-descricao">É assim que seria as nuvens de um por do sol roxo.</p>
+            <p class="principal-galeria__secao-fotos-card-data">10/04/2003</p>
+            <p class="principal-galeria__secao-fotos-card-nome">Grécia.</p>
+          </div>
+
+          <div class="principal-galeria__secao-fotos-card" data-cardfoto="3">
+            <img src="/paisagem-galeria.jpg" alt="" class="principal-galeria__secao-fotos-card-img">
+            <p class="principal-galeria__secao-fotos-card-descricao">Meu primeiro desenho gerado por IA.</p>
+            <p class="principal-galeria__secao-fotos-card-data">10/04/2014</p>
+            <p class="principal-galeria__secao-fotos-card-nome">Grécia.</p>
+          </div>
+
+          <div class="principal-galeria__secao-fotos-card" data-cardfoto="4">
+            <img src="/praia.jpg" alt="" class="principal-galeria__secao-fotos-card-img">
+            <p class="principal-galeria__secao-fotos-card-descricao">Minha primeira ida a uma praia, é muito estranho a água ser salgada.</p>
+            <p class="principal-galeria__secao-fotos-card-data">10/04/2020</p>
+            <p class="principal-galeria__secao-fotos-card-nome">Grécia.</p>
+          </div> -->
+
+
+        <!-- CARD CREATE -->
+        
+      </div>
+    </section>
+  </main>
+  <!-- MODAL -->
+  <div class="modal hidden">
+    <!-- MODAL DE CRIAÇÃO -->
+    <div class="modal__create hidden">
+      <button class="modal__create-btn-close btn-close"></button>
+      <form action="" novalidate class="modal__create-form">
+        
+        <!-- ID DO CARD -->
+        <input type="hidden" name="identificador" type="hidden" id="pensamento-id" />
+        <!-- ARQUIVO -->
+        <div class="modal__create-form-upload">
+          <img class="modal__create-form-img" src="/imagem-em-branco.jpeg" alt="Imagem padrão">
+          <p class="modal__create-form-paragrafo" data-erro="dado"></p>
+          <button type="button" class="modal__create-form-btn">Carregar imagem</button>
+          <input class="modal__create-form-input--file" required accept=".jpg, .png, .pdf" name="dado" type="file">
+        </div>
+
+        <div class="modal__create-form-dados">
+
+          <!-- NOME -->
+          <div class="modal__create-form-group">
+            <label for="nome" class="modal__create-form-label">Local</label>
+            <input name="nome" type="text" id="nome" class="modal__create-form-input" required>
+            <p class="modal__create-form-erro" data-erro="nome"></p>
+          </div>
+          <!-- DATA -->
+          <div class="modal__create-form-group">
+            <label for="data-foto" class="modal__create-form-label">Data</label>
+            <input name="data" type="date" id="data-foto" class="modal__create-form-input" required>
+            <p class="modal__create-form-erro" data-erro="data"></p>
+          </div>
+          <!-- DESCRICAO -->
+          <div class="modal__create-form-group">
+            <label for="descricao" class="modal__create-form-label">Descricao</label>
+            <textarea name="descricao" id="descricao" class="modal__create-form-input" rows="7" required
+              maxlength="500"></textarea>
+            <p class="modal__create-form-erro" data-erro="descricao"></p>
+          </div>
+          <!-- RESET E SUBMIT -->
+          <div class="modal__create-form-group--controls">
+            <input type="reset" value="Descartar" class="modal__create-form-reset">
+            <input type="submit" class="modal__create-form-submit" value="Salvar">
+          </div>
+        </div>
+      </form>
+
+    </div>
+    <!-- MODAL -->
+    <div class="modal__foto hidden">
+      <button class="modal__foto-btn btn-close"></button>
+      <button class="modal__foto-button modal__foto-button--anterior" data-btn="anterior"></button>
+      <button class="modal__foto-button modal__foto-button--posterior" data-btn="posterior"></button>
+
+      <div class="modal__foto-painel">
+        <!-- <div class="modal__foto-enquadramento">
+            <img src="/barco.jpg" alt="imagem fotografia" class="modal__foto-enquadramento-img">
+            <button class="modal__foto-enquadramento-btn"></button>
+          </div>
+          <p class="modal__foto-paragrafo modal__foto-paragrafo--descricao">Uma viagem inesquecível! Estar no barco ao pôr do sol foi mágico. O cheiro do mar misturado com a brisa fresca era incrível. Uma viagem inesquecível! Estar no barco ao pôr do sol foi mágico. O cheiro do mar misturado com a brisa fresca era incrível. Uma viagem inesquecível! Estar no barco ao pôr do sol foi mágico. O cheiro do mar misturado com a brisa fresca era incrível. Uma viagem inesquecível! Estar no barco ao pôr do sol foi mágico. O cheiro do mar misturado com a brisa fresca era incrível. </p>
+          <p class="modal__foto-paragrafo modal__foto-paragrafo--data">10/04/2021</p>
+          <p class="modal__foto-paragrafo modal__foto-paragrafo--local">Grécia</p> -->
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>

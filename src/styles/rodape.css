@@ -1,0 +1,131 @@
+.rodape{
+    height: 90vh;
+    background: url(/banner-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* SOMBRA RODAPE */
+.rodape__overlay{
+    position: absolute;
+    z-index: 1;
+    background: rgb(0,0,0,0.4);
+    height: 100%;
+    width: 100%;
+}
+.rodape__titulo{
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-size: 3em;
+    font-weight: 700;
+    width: 500px;
+}
+/* PAINEL LOGIN */
+.rodape__card{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    align-items: center;
+    padding: 2.5em 3em;
+    border-radius: 50px;
+    background-color: white;
+    height: 750px;
+    width: 450px;
+    box-shadow: 3px 3px 5px 0 black;
+    box-sizing: border-box;
+}
+.rodape__card-titulo{
+    font-size: 4em;
+    font-weight: 700;
+}
+.rodape__card-titulo-enfase{
+    color: var(--cor-enfase);
+}
+.rodape__card-paragrafo{
+    font-size: 1em;
+    text-align: center;
+    width: 300px;
+}
+/* FORMULÁRIO RODAPE */
+.rodape__card-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    gap: .8em;
+}
+/* GRUPOS DE INPUT */
+.form-group--rodape{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+}
+/* ESTILIZAR OS LABEL DO FORMULÁRIO DE CRIAÇÃO DE CONTA */
+.rodape__card-form-label{
+    position: absolute;
+    top: 0;
+    left: 0.5em;
+    font-weight: 300;
+}
+/* ESTILIZAR OS INPUTS DO FORMULÁRIO DE CRIAÇÃO DE CONTA */
+.rodape__card-form-input{
+    margin-top: 2em;
+    padding: .8em;
+    border: 2px solid #c5c4c4;
+    border-radius: 16px;
+    width: 250px ;
+    height: 20px;
+    transition: box-shadow .1s ease, outline .1s ease;
+
+    
+}
+.rodape__card-form-input:focus{
+    /* border: none; */
+    outline: 2px solid var(--cor-enfase);
+    box-shadow:
+    1px 1px 0px 4px var(--cor-off-enfase),
+    1px -1px 0px 4px var(--cor-off-enfase),
+    -1px 1px 0px 4px var(--cor-off-enfase),
+    -1px -1px 0px 4px var(--cor-off-enfase);
+    /* outline: none;  */
+     border: 2px solid transparent;    
+}
+.rodape__card-form-paragrafo{
+    position: absolute;
+    left: .5em;
+    top: 95%;
+    color: red;
+    font-size: .8em;
+}
+.rodape__card-form-submit{
+    margin-top: 1em;
+    border-radius: 30px;
+    background-color: var(--cor-enfase);
+    border: none;
+    font-weight: 700;
+    color: white;
+    padding: .8em;
+    transition: transform .1s ease, background .1s ease;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.rodape__card-form-submit:hover {
+    background-color: var(--cor-off-enfase);
+}
+.rodape__card-form-submit:active {
+    transform: scale(0.95)
+}
+.rodape__card-form-submit:focus{
+    outline: none;
+}

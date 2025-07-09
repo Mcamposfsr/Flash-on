@@ -1,0 +1,185 @@
+.cabecalho{
+    padding: 1em 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 100;
+    background-color: white;
+    box-sizing: border-box;
+    height: 100px;
+}
+/* LOGO */
+.cabecalho__titulo{
+    font-family: var(--fonte-secundaria);
+    font-size: 2em;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+}
+.cabecalho__titulo-enfase{
+    color: var(--cor-enfase);
+}
+/* PAINEL DE BOTOES */
+.cabecalho__menu{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+/* ESTILOS BOTOES */
+.cabecalho__menu-button {
+    background-color: transparent;
+    border: none;
+    border-radius: 30px;
+    padding: .8em;
+    font-weight: 600;
+    font-size: 1em;
+    transition: background .3s ease,transform 0.05s ease,color 0.3s ease;
+}
+
+.cabecalho__menu-button--entrar {
+    background-color: var(--cor-enfase);
+    color: white;
+}
+/* ESTILIZAR BOTOES HOVER */
+.cabecalho__menu-button--entrar:hover {
+    background-color: var(--cor-off-enfase);
+}
+.cabecalho__menu-button--criar:hover {
+    color: var(--cor-enfase);
+}
+/* ESTILIZAR BOTOES ACTIVE */
+.cabecalho__menu-button--entrar:active {
+    transform: scale(0.95)
+}
+.cabecalho__menu-button--criar:active {
+    transform: scale(0.95)
+}
+/* RETIRAR BORDA AO FOCA NO BOTAO */
+.cabecalho__menu-button--entrar:focus,.cabecalho__menu-button--criar:focus{
+    outline: none;
+}
+
+/* ESTILOS GALERIA.HTML */
+
+
+/* PAINEL USUÁRIO */
+.cabecalho__div{
+    display: flex;
+    gap: .4em;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* TEXTO NOME USUÁRIO */
+.cabecalho__div-paragrafo{
+    font-size: 1.4em;
+    font-weight: 400;
+    color: var(--cor-desfoque);
+}
+
+/* ESTILOS BOTÃO MENU */
+.cabecalho__div-btn{
+    border: none;
+    background: transparent;
+    font-size: 1.5em;
+    color: var(--cor-desfoque);
+    transition: color .3s ease;
+    display: flex;
+    gap: .3em;
+    transition: transform .5s ease;
+    transform: rotate(-90deg);
+
+}
+/* ANIMAÇÃO BOTÃO MENU */
+.cabecalho__div-btn--active{
+    transform: rotate(0);
+}
+
+/* ESTILOS LISTA */
+.cabecalho__div-menu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    width: 250px;
+    top: 240%;
+    left: 2%;
+    background-color: white;
+    overflow: hidden;
+    transition: max-height .5s ease,opacity .5s ease ;
+    padding: 1.5em .6em;
+}
+/* LISTA ABERTA */
+.cabecalho__div-menu--open{
+    max-height: 300px;
+}
+/* LISTA FECHADA */
+.cabecalho__div-menu--close{
+    max-height: 0;
+    opacity: 0;
+}
+
+/* LISTA ITEM */
+.cabecalho__div-menu-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: .5em .8em;
+}
+/* EFEITO HOVER ITENS LISTA */
+.cabecalho__div-menu-item:hover .cabecalho__div-menu-item-btn{
+    color: var(--cor-enfase);
+}
+.cabecalho__div-menu-item:hover .cabecalho__div-menu-item-icone{
+    color: var(--cor-enfase);
+}
+
+/* ESTILOS BOTOES */
+.cabecalho__div-menu-item-btn{
+    border: none;
+    background: transparent;
+    font-size: 1.2em;
+    color: var(--cor-desfoque);
+    transition: color .3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* ESTILOS ICONES */
+.cabecalho__div-menu-item-icone{
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    font-family: "FontAwesome";
+    color: var(--cor-desfoque);
+    transition: color .5s ease;
+}
+/* DEFINIR ICONES BOTOES */
+.cabecalho__div-menu-item-icone--perfil::after{
+    content: "\f007";
+    
+}
+.cabecalho__div-menu-item-icone--notificacoes::after{
+    content: "\f0f3";
+    
+}
+.cabecalho__div-menu-item-icone--configuracoes::after{
+    content: "\f013";
+    
+}
+.cabecalho__div-menu-item-icone--criar::after{
+    content: "\2b";
+    
+}
+.cabecalho__div-menu-item-icone--sair::after{
+    content: "\f2f5";
+    
+}

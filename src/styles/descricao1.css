@@ -1,0 +1,68 @@
+.principal__descricao1{
+    height: calc(50vh - 50px);
+    display: flex;
+    background-color: var(--cor-terciaria);
+    padding: 2em;
+    justify-content: space-evenly;
+    /* margin-top: 100px; */
+    scroll-margin-top: 100px;
+    box-sizing: border-box;
+}
+.principal__descricao1-texto{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+.principal__descricao1-texto-titulo{
+    font-size: 3em;
+    font-weight: 700;
+    color: var(--cor-fonte-primaria);
+    grid-column: 1;
+    grid-row: 1;
+}
+.principal__descricao1-texto-paragrafo{
+    color: var(--cor-fonte-primaria);
+    width:500px;
+    text-align: center;
+    font-size: 1.2em;
+}
+.principal__descricao1-texto-button{
+    background-color: var(--cor-fonte-primaria);
+    border: none;
+    border-radius: 30px;
+    padding: .8em;
+    font-weight: 600;
+    font-size: 1em;
+    transition: background .3s ease,transform 0.05s ease,color 0.3s ease;
+    color: white;
+}
+.principal__descricao1-texto-button:hover{
+    background-color: var(--cor-quaternaria);
+    
+}
+.principal__descricao1-texto-button:active{
+    transform: scale(0.95)
+
+}
+.principal__descricao1-mural{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(2,200px);
+    column-gap: 1em;
+    align-items: center;
+}
+.principal__descricao1-mural img:nth-child(3){
+    grid-row: 2;
+    grid-column: 1/span 2;
+    margin-left: 6em;
+    align-self: flex-start;
+}
+.principal__descricao1-mural-img{
+    width: 160px;
+    height: 160px;
+    border-radius: 20px 5px 20px 5px;
+    box-shadow: 2px 2px 5px gray;
+    opacity: .8;
+}

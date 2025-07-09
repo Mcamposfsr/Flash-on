@@ -1,0 +1,468 @@
+.modal{
+    position: fixed;
+    top: 0;
+    z-index: 300;
+    height: 100%;
+    width: 100%;
+    background: rgb(0,0,0,.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+/* FORMULÁRIO MODAL */
+.modal__content-painel{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+    align-items: center;
+    padding: 2.5em 3em;
+    background-color: white;
+    width: 450px;
+    border-radius: 50px;
+    box-shadow: 3px 3px 5px 0 black;
+    box-sizing: border-box;
+}
+.modal__content-painel{
+    height: 550px;
+
+}
+.modal__content-painel-titulo{
+    font-size: 4em;
+    font-weight: 700;
+}
+.modal__content-painel-titulo-enfase{
+    color: var(--cor-enfase);
+}
+.modal__content-painel-paragrafo{
+    font-size: 1.5em;
+    text-align: center;
+    width: 300px;
+}
+/* FORMULÁRIO MODAL */
+.modal__content-painel-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5em;
+    gap: 1em;
+}
+/* GRUPOS DE INPUT */
+.form-group--modal{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+}
+/* ESTILIZAR OS LABEL DO FORMULÁRIO DE CRIAÇÃO DE CONTA */
+.modal__content-painel-form-label{
+    position: absolute;
+    top: 0;
+    left: 0.5em;
+    font-weight: 300;
+}
+/* ESTILIZAR OS INPUTS DO FORMULÁRIO DE CRIAÇÃO DE CONTA */
+.modal__content-painel-form-input{
+    margin-top: 2em;
+    padding: .8em;
+    border: 2px solid #c5c4c4;
+    border-radius: 16px;
+    width: 250px ;
+    height: 20px;
+    transition: box-shadow .1s ease, outline .1s ease;
+    
+}
+.modal__content-painel-form-input:focus{
+    border: none;
+    outline: none;
+    outline: 2px solid var(--cor-enfase);
+    box-shadow:
+    1px 1px 0px 4px var(--cor-off-enfase),
+    1px -1px 0px 4px var(--cor-off-enfase),
+    -1px 1px 0px 4px var(--cor-off-enfase),
+    -1px -1px 0px 4px var(--cor-off-enfase);
+} 
+/* Paragrafo erro */
+.modal__content-painel-form-paragrafo{
+    position: absolute;
+    left: .5em;
+    top: 95%;
+    color: red;
+    font-size: .8em;
+}
+/* TEXTO PARA CRIAR CONTA */
+.modal__content-painel-form-p{
+    text-align: center;
+    line-height: 1.5em;
+}
+.modal__content-painel-form-p--span{
+    color: var(--cor-enfase);
+    margin-top: .5em;
+    cursor: pointer;
+}
+.modal__content-painel-form-p--span:hover{
+    text-decoration: underline;
+}
+.modal__content-painel-form-submit{
+    margin-top: .8em;
+    border-radius: 30px;
+    background-color: var(--cor-enfase);
+    border: none;
+    font-weight: 700;
+    color: white;
+    padding: .8em;
+    transition: transform .1s ease, background .1s ease;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.modal__content-painel-form-submit:hover {
+    background-color: var(--cor-off-enfase);
+}
+.modal__content-painel-form-submit:active {
+    transform: scale(0.95)
+}
+.modal__content-painel-form-submit:focus{
+    outline: none;
+}
+
+
+/* MODAL PÁGINA GALERIA */
+
+/* BTN PARA FECHAR MODAL */
+
+.modal__create-btn-close{
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    font-weight: 200;
+    padding: 20px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    right: 0;
+    color: var(--cor-desfoque);
+    transition: transform .2s ease;
+}
+.modal__create-btn-close:hover{
+    transform: scale(1.1);
+}
+.modal__create-btn-close::before{
+    content: "\58";
+}
+/* MODAL CRIAÇÃO DE CARD */
+
+.modal__create{
+    background-color: white;
+    position: relative;
+    /* border-radius: 36px; */
+    box-shadow: 5px 5px 10px 0 black;
+}
+/* FORMULÁRIO PARA CRIAÇÃO DO CARD */
+.modal__create-form{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    
+    padding: 4em;
+    height: 480px;
+    width: 650px;
+}
+
+/* CARREGAR IMAGEM */
+.modal__create-form-upload{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    height: 480px;
+}
+.modal__create-form-img{
+    grid-row: 1;
+    grid-column: 1;
+    width: 350px;
+    height: 350px;
+}
+.modal__create-form-paragrafo{
+    color: red;
+    font-weight: 300;
+    
+}
+/* BTN PARA CARREGAR IMG */
+.modal__create-form-btn{
+    background-color: transparent;
+    border: 3px solid var(--cor-desfoque);
+    border-radius: 32px;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: var(--cor-desfoque);
+    height: 60px;
+    margin-top: auto;
+    transition: color .1s ease, background .1s ease;
+    cursor: pointer;
+}
+.modal__create-form-btn:hover {
+    background-color: var(--cor-desfoque);
+    color: white;
+}
+.modal__create-form-btn:active {
+    transform: scale(0.95)
+}
+.modal__create-form-btn:focus{
+    outline: none;
+}
+/* INPUT TYPE FILES*/
+.modal__create-form-input--file{
+    display: none;
+}
+
+
+/* DEMAIS INPUTS */
+.modal__create-form-dados{
+    display: flex;
+    flex-direction: column;
+    
+}
+.modal__create-form-group{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+
+}
+.modal__create-form-label{
+    position: absolute;
+    top: 0;
+    left: 0.5em;
+    font-weight: 300;
+}
+.modal__create-form-input{
+    padding: .8em;
+    margin-top: 2em;
+    border: 2px solid #c5c4c4;
+    border-radius: 16px;
+    width: 250px ;
+    transition: box-shadow .1s ease, outline .1s ease;
+}
+.modal__create-form-input:focus{
+    border: 2px solid transparent;
+    outline: none;
+    box-shadow:
+    1px 1px 0px 4px var(--cor-off-enfase),
+    1px -1px 0px 4px var(--cor-off-enfase),
+    -1px 1px 0px 4px var(--cor-off-enfase),
+    -1px -1px 0px 4px var(--cor-off-enfase);
+    /* border: 2px solid transparent; */ 
+}
+/* MSG ERRO FORMULARIO */
+.modal__create-form-erro{
+    position: absolute;
+    left: .2em;
+    top: 110%;
+    color: red;
+    font-size: .8em;
+}
+/* CONTAINER BOTOES FORMULÁRIO */
+.modal__create-form-group--controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+/* ESTILOS BOTÃO RESET */
+.modal__create-form-reset{
+    cursor: pointer;
+    margin-top: 1em;
+    border-radius: 30px;
+    width: 130px;
+    background-color: transparent;
+    font-weight: 700;
+    color: var(--cor-desfoque);
+    border: 3px solid var(--cor-desfoque);
+    height: 60px;
+    transition: color .1s ease, background .1s ease;
+    font-size: 1.2em;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+.modal__create-form-reset:hover {
+    background-color: var(--cor-desfoque);
+    color: white;
+}
+.modal__create-form-reset:active {
+    transform: scale(0.95)
+}
+.modal__create-form-reset:focus{
+    outline: none;
+}
+/* ESTILOS BTN SUBMIT */
+.modal__create-form-submit{
+    cursor: pointer;
+    margin-top: 1em;
+    border-radius: 30px;
+    width: 130px;
+    background-color: var(--cor-enfase);
+    border: none;
+    font-weight: 700;
+    color: white;
+    height: 60px;
+    transition: transform .1s ease, background .1s ease;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.modal__create-form-submit:hover {
+    background-color: var(--cor-off-enfase);
+}
+.modal__create-form-submit:active {
+    transform: scale(0.95)
+}
+.modal__create-form-submit:focus{
+    outline: none;
+}
+
+/* MODAL AMPLIAÇÃO CARD */
+
+.modal__foto{
+    background-color: var(--cor-card-1-principal);
+    
+    position: relative;
+    /* border-radius: 36px; */
+    box-shadow: 20px 20px 0px -2px var(--cor-card-1-secundaria);
+    height: 600px;
+    width: 800px;
+    transition: transform 0s ease , opacity .3s ease;
+    padding: 4em;
+    
+}
+/* ANIMAÇÕES TROCA DE CARD */
+.modal__foto--direita{
+    transition: transform 2s ease , opacity .3s ease;
+    transform: translateX(+200%);
+    opacity: 0;
+}
+.modal__foto--esquerda{
+    transition: transform 2s ease , opacity .3s ease;
+    transform: translateX(-200%);
+    opacity: 0;
+}
+/* BOTÃO PARA FECHAR MODAL */
+
+.modal__foto-btn:hover{
+    transform: scale(1.1);
+}
+.modal__foto-btn::before{
+    content: "\58";
+}
+
+.modal__foto-btn{
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    padding: 20px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    top: 0;
+    right: 0;
+    color: black;
+    transition: transform .2s ease;
+    font-weight: 300;
+}
+.modal__foto-painel{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    row-gap: 1em;
+    height: 100%;
+    width: 100%;
+
+}
+.modal__foto-enquadramento{
+    width: 100%;
+    height: 400px;
+    box-shadow: 4px 4px 10px 0px var(--cor-principal);
+    grid-column: 1 /span 2;
+    grid-row: 1;
+    position: relative;
+}
+.modal__foto-enquadramento-img{
+    width: 100%;
+    height: 100%;
+    
+}
+.modal__foto-enquadramento-btn{
+    position: absolute;
+    font-family: "FontAwesome";
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+
+    transform: translateY(-50%);
+    top: 95%;
+    right: 0;
+    transition: opacity .3s ease;
+    opacity: .7;
+    color: var(--cor-enfase);
+}
+.modal__foto-enquadramento-btn:hover{
+    opacity: 1;
+}
+.modal__foto-enquadramento-btn::before{
+    content: "\f0ed";
+}
+/* DADOS */
+.modal__foto-paragrafo{
+    font-size: 32px;
+    font-weight: 300;
+    font-style: italic;
+
+}
+.modal__foto-paragrafo--descricao{
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    font-weight: 300;
+    font-size: 18px;
+}
+.modal__foto-paragrafo--data{
+    grid-column: 1;
+    grid-row: 3;
+    align-self: flex-end;
+    justify-self: flex-start;
+}
+.modal__foto-paragrafo--local{
+    grid-column: 2;
+    grid-row: 3;
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+/* BOTOES DE DIREÇÃO MODAL */
+.modal__foto-button{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    font-family: "FontAwesome";
+    transform: translateY(-50%);
+    padding: 40px;
+    font-size: 80px;
+    top: 50%;
+    color: var(--cor-desfoque);
+    transition: color .2s ease;
+}
+.modal__foto-button:hover{
+    color: white;
+}
+
+.modal__foto-button--anterior{
+    left: -25%;
+}
+.modal__foto-button--anterior::after{
+    content: "\f053";
+}
+.modal__foto-button--posterior{
+    right: -25%;
+
+}
+.modal__foto-button--posterior::after{
+    content: "\f054";
+}

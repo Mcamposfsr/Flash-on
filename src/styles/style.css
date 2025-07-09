@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Padrão */
+@import url(header.css);
+
+/* index.html */
+@import url(banner.css);
+@import url(descricao1.css);
+@import url(descricao2.css);
+@import url(rodape.css);
+@import url(modal.css);
+
+/* galeria.html */
+@import url(principal-galeria.css);
+
+
+
+:root{
+    --fonte-principal:"Roboto", sans-serif;
+    --fonte-secundaria:"Montserrat", sans-serif;
+    --cor-enfase:#FDDE55;
+    --cor-off-enfase:#fde783;
+    --cor-principal:#E78F81;
+    --cor-secundaria:#fabc99;
+    --cor-terciaria:#dafff6;
+    --cor-quaternaria:#1eac88;
+    --cor-desfoque:#9c9c9c;
+    --cor-fonte-primaria:#03795b;
+    --cor-fonte-secundaria:#FF8C8C;
+
+
+    --cor-card-1-principal:#F8D082;
+    --cor-card-1-secundaria:#640D6B;
+    
+
+
+    
+}
+.hidden{
+    display: none;
+    opacity: 0;
+}
+body{
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    position: relative;
+    
+}
+button{
+    cursor: pointer;
+}

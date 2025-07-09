@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLASH-ON</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="main.js" type="module" defer></script>
+  </head>
+  <body>
+    <!-- CABECALHO -->
+    <header class="cabecalho">
+      <h1 class="cabecalho__titulo">
+        FLASH-<span class="cabecalho__titulo-enfase">ON</span>
+      </h1>
+      <div class="cabecalho__menu">
+        <button class="cabecalho__menu-button cabecalho__menu-button--entrar">
+          Entrar
+        </button>
+        <button class="cabecalho__menu-button cabecalho__menu-button--criar">
+          Criar conta
+        </button>
+      </div>
+    </header>
+    <!-- CONTEUDO PRINCIPAL -->
+    <main class="principal">
+      <!-- BANNER FLASH-ON -->
+      <section class="principal__banner">
+        <h2 class="principal__banner-titulo">
+          FLASH-<span class="principal__banner-titulo-enfase">ON</span>
+        </h2>
+        <p class="principal__banner-paragrafo">Sua Galeria online!</p>
+        <div class="principal__banner-painel">
+          <button
+            class="principal__banner-painel-button principal__banner-painel-button--inicio">
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+        </div>
+      </section>
+      <!-- SECAO 1 -->
+      <section class="principal__descricao1">
+        <div class="principal__descricao1-texto">
+          <h2 class="principal__descricao1-texto-titulo">Salve suas imagens favoritas.</h2>
+          <p class="principal__descricao1-texto-paragrafo">Todas suas imagens em um só lugar, para você acessá-las quando quiser.</p>
+          <button class="principal__descricao1-texto-button" data-btn>Explorar</button>
+        </div>
+        <div class="principal__descricao1-mural">
+          <img src="/desenho-passarinho.jpg" alt="" class="principal__descricao1-mural-img">
+          <img src="/nuvens.jpg" alt="" class="principal__descricao1-mural-img">
+          <img src="/praia.jpg" alt="" class="principal__descricao1-mural-img">
+        </div>
+      </section>
+      <!-- SECAO 2 -->
+      <section class="principal__descricao2">
+        <div class="principal__descricao2-card">
+          <img src="/barco.jpg" alt="" class="principal__descricao2-card-img">
+          <p class="principal__descricao2-card-descricao">Uma viagem inesquecível! Estar no barco ao pôr do sol foi mágico. O cheiro do mar misturado com a brisa fresca era incrível.</p>
+          <p class="principal__descricao2-card-data">10/04/2015</p>
+          <p class="principal__descricao2-card-nome">Grécia.</p>
+        </div>
+        <div class="principal__descricao2-texto">
+          <h2 class="principal__descricao2-texto-titulo">Cada imagem, uma história.</h2>
+          <p class="principal__descricao2-texto-paragrafo">adicione descrições a suas imagens</p>
+          <button class="principal__descricao2-texto-button" data-btn>Explorar</button>
+        </div>
+      </section>
+    </main>
+    <!-- RODAPE -->
+    <footer class="rodape">
+      <div class="rodape__overlay"></div>
+      <h2 class="rodape__titulo">Inscreva-se agora, e tenha acesso a nossa galeria.</h2>
+      
+      <div class="rodape__card">
+        <h2 class="rodape__card-titulo">FLASH-<span class="rodape__card-titulo-enfase">ON</span></h2>
+        <p class="rodape__card-paragrafo">Crie sua conta gratuitamente!</p>
+
+        <form action="" class="rodape__card-form" novalidate>
+          <!-- NOME -->
+          <div class="form-group--rodape">
+            <label class="rodape__card-form-label" for="input-nome">Nome</label>
+            <input type="text" id="input-nome" maxlength="20" name="nome" placeholder="Nome" class="rodape__card-form-input" required>
+            <p class="rodape__card-form-paragrafo" data-erro="nome"></p>
+          </div>
+          <!-- EMAIL -->
+          <div class="form-group--rodape">
+            <label class="rodape__card-form-label" for="input-email">Email</label>
+            <input type="email" id="input-email" name="email" placeholder="Email" class="rodape__card-form-input" required>
+            <p class="rodape__card-form-paragrafo" data-erro="email"></p>
+          </div>
+          <!-- SENHA -->
+          <div class="form-group--rodape">
+            <label class="rodape__card-form-label" for="input-senha">Senha</label>
+            <input type="password" id="input-senha" name="senha" placeholder="Senha" class="rodape__card-form-input" required minlength="8">
+            <p class="rodape__card-form-paragrafo" data-erro="senha"></p>
+          </div>
+          <!-- REPETIR A SENHA -->
+          <div class="form-group--rodape">
+            <label class="rodape__card-form-label" for="input-senha-R">Repita sua senha</label>
+            <input name="senha2" type="password" id="input-senha-R" placeholder="Confirmar senha" class="rodape__card-form-input" required>
+            <p class="rodape__card-form-paragrafo" data-erro="senha2"></p>
+          </div>
+          <!-- DATA -->
+          <div class="form-group--rodape">
+            <label class="rodape__card-form-label" for="input-date">Data de nascimento</label>
+            <input type="date" id="input-date" name="data" class="rodape__card-form-input" min="1900-01-01" required>
+            <p class="rodape__card-form-paragrafo" data-erro="data"></p>
+          </div>
+
+          <input type="submit" class="rodape__card-form-submit" value="Criar conta">
+
+        </form>
+
+      </div>
+    </footer>
+    <!-- MODAL -->
+    <div class="modal hidden">
+      <div class="modal__content">
+        <!-- MODAL LOGIN -->
+        <div class="modal__content-painel">
+          <h2 class="modal__content-painel-titulo">FLASH-<span class="modal__content-painel-titulo-enfase">ON</span></h2>
+          <p class="modal__content-painel-paragrafo">Bem vindo ao Flash-on!</p>
+
+          <form action="" novalidate class="modal__content-painel-form">
+            <!-- INPUT EMAIL -->
+            <div class="form-group--modal">
+              <label class="modal__content-painel-form-label" for="input-painel-email-login">Email</label>
+              <input required type="email" id="input-painel-email-login" name="email" placeholder="Email" class="modal__content-painel-form-input">
+              <p class="modal__content-painel-form-paragrafo" data-erro="email"></p>
+            </div>
+            <!-- INPUT SENHA -->
+            <div class="form-group--modal">
+              <label class="modal__content-painel-form-label" for="input-painel-senha-login">Senha</label>
+              <input required type="password" id="input-painel-senha-login" name="senha" placeholder="Senha" class="modal__content-painel-form-input">
+              <p class="modal__content-painel-form-paragrafo" data-erro="senha"></p>
+            </div>
+            <p class="modal__content-painel-form-p">Ainda não possui uma conta?</br><span class="modal__content-painel-form-p--span">Inscrever-se</span></p>
+            <input type="submit" class="modal__content-painel-form-submit" value="Fazer login">
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
