@@ -74,12 +74,12 @@ Você pode acessar o sistema rapidamente usando o seguinte perfil de teste:
 
 ## Demonstração visual
 
-![Tela principal 1](./images/tela1.png)  
-![Tela principal 2](./images/tela2.png)  
-![Tela principal 3](./images/tela3.png)
-![Tela principal 4](./images/tela4.png)
-![Tela principal 5](./images/tela5.png)
-![Tela principal 6](./images/tela6.png)
+![Tela principal 1](./images/tela01.png)  
+![Tela principal 2](./images/tela02.png)  
+![Tela principal 3](./images/tela03.png)
+![Tela principal 4](./images/tela04.png)
+![Tela principal 5](./images/tela05.png)
+![Tela principal 6](./images/tela06.png)
 
 ---
 
